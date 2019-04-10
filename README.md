@@ -1,5 +1,5 @@
-# Aliyun SLS Log For Laravel
-
+# Aliyun SLS Log For Laravel，Lumen
+- [lokielse/laravel-sls](https://github.com/lokielse/laravel-sls)的分支，修改了一些代码支持lumen
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -9,21 +9,27 @@
 Via Composer
 
 ``` bash
-$ composer require lokielse/laravel-sls
+$ composer require olivefm/laravel-sls
 ```
 
 ## Config
 
 Add following service providers into your providers array in `config/app.php`
 
+
+
 ```php
 Lokielse\LaravelSLS\LaravelSLSServiceProvider::class
 ```
 
-Publish `sls.php` to `config` folder
+Copy `sls.php` to `config` folder
 
-```sh
-php artisan vendor:publish --provider="Lokielse\LaravelSLS\LaravelSLSServiceProvider" 
+For Lumen
+
+Add following code into in `bootstrap/app.php`
+
+```php
+$app->configure("sls");
 ```
 
 Replace `Log` alias in your `config/app.php` (Optional)

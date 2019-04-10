@@ -1,10 +1,10 @@
 {
-  "name": "lokielse/laravel-sls",
+  "name": "olivefm/laravel-sls",
   "type": "library",
-  "description": "Aliyun SLS Log For Laravel",
+  "description": "Aliyun SLS Log For Laravel,lumen",
   "keywords": [
+    "lumen",
     "laravel",
-    "lokielse",
     "aliyun",
     "sls",
     "log",
@@ -12,16 +12,15 @@
     "cloud",
     "日志",
     "阿里云",
-    "laravel-sls"
+    "laravel-sls",
+    "lumen-sls"
   ],
-  "homepage": "https://github.com/lokielse/laravel-sls",
+  "homepage": "https://github.com/yeesuu/laravel-sls",
   "license": "MIT",
   "authors": [
     {
-      "name": "lokielse",
-      "email": "lokielse@gmail.com",
-      "homepage": "http://lokielse.org",
-      "role": "Developer"
+      "name": "yeesuu",
+      "email": "yeesuu@gmail.com",
     }
   ],
   "require": {
